@@ -48,7 +48,7 @@ Built with a focus on simplicity, extensibility, and performance — Flowchartif
 | Role | Name | Link |
 |------|------|------|
 | Lead Developer | **Aaron Hartono** | [GitHub →](https://github.com/aaronhartono) |
-| Co-Developer | **Benedict Halim** | [GitHub →](https://github.com/YOUR_USERNAME) |
+| Co-Developer | **Benedict Halim** | [GitHub →](https://github.com/tokinohana) |
 
 ---
 
