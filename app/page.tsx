@@ -59,11 +59,11 @@ export default function Home() {
             <Button
               onClick={handleDownloadPNG}
               variant="outline"
-              className="border-border hover:bg-muted bg-transparent"
+              className="border-border hover:bg-blue-950 bg-transparent"
             >
               Download PNG
             </Button>
-            <Button onClick={handleClear} variant="outline" className="border-border hover:bg-muted bg-transparent">
+            <Button onClick={handleClear} variant="outline" className="border-border hover:bg-blue-950 bg-transparent">
               Clear
             </Button>
           </div>
