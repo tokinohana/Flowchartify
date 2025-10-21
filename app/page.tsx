@@ -4,6 +4,7 @@ import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import FlowchartEditor from "@/components/flowchart-editor"
 import FlowchartPreview from "@/components/flowchart-preview"
+import PseudoEditor from "@/components/PseudoEditor";
 
 export default function Home() {
   const [code, setCode] = useState("st=>start: Start\ne=>end: End\nst->e")
@@ -74,7 +75,8 @@ export default function Home() {
       <div className="flex flex-1 overflow-hidden">
         {/* Left Panel - Editor */}
         <div className="flex-1 border-r border-border overflow-hidden">
-          <FlowchartEditor code={code} setCode={setCode} />
+          {/* <FlowchartEditor code={code} setCode={setCode} /> */}
+          <PseudoEditor code={code} onChange={setCode} />
         </div>
 
         {/* Right Panel - Preview */}
