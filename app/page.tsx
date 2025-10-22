@@ -54,17 +54,17 @@ export default function Home() {
             <h1 className="text-xl font-bold text-foreground">Flowchartify</h1>
           </div>
           <div className="flex gap-2">
-            <Button onClick={handleRender} className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button onClick={handleRender} className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm px-3">
               Render
             </Button>
             <Button
               onClick={handleDownloadPNG}
               variant="outline"
-              className="border-border hover:bg-blue-950 bg-transparent"
+              className="border-border hover:bg-blue-950 bg-transparent text-sm px-3"
             >
               Download PNG
             </Button>
-            <Button onClick={handleClear} variant="outline" className="border-border hover:bg-blue-950 bg-transparent">
+            <Button onClick={handleClear} variant="outline" className="border-border hover:bg-blue-950 bg-transparent text-sm px-3">
               Clear
             </Button>
           </div>
@@ -72,15 +72,15 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-col md:flex-row flex-1 overflow-hidden">
         {/* Left Panel - Editor */}
-        <div className="flex-1 border-r border-border overflow-hidden">
+        <div className="md:flex-1 border-border overflow-hidden md:border-r h-[50vh] md:h-auto">
           {/* <FlowchartEditor code={code} setCode={setCode} /> */}
           <PseudoEditor code={code} onChange={setCode} />
         </div>
 
         {/* Right Panel - Preview */}
-        <div className="flex-1 overflow-hidden bg-muted/30">
+        <div className="md:flex-1 overflow-hidden bg-muted/30 h-[50vh] md:h-auto">
           <FlowchartPreview ref={previewRef} code={code} renderTrigger={renderTrigger} />
         </div>
       </div>

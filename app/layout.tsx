@@ -7,9 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'Flowchartify - Flowchart Generator from Pseudocode(pending)',
+  description: 'Generate flowcharts easily from pseudocode(pending) using Flowchartify. Write your logic in a simple DSL and visualize it instantly.'
 }
 
 export default function RootLayout({

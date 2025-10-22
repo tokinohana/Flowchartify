@@ -99,6 +99,10 @@ export default function PseudoEditor({ code, onChange }: PseudoEditorProps) {
 
     return (
         <div className="h-full w-full border-border border rounded-lg overflow-hidden">
+            <div className="border-b border-border px-4 py-3">
+                <p className="text-sm font-medium text-foreground">DSL Code</p>
+                <p className="text-xs text-muted-foreground mt-1">Enter flowchart.js DSL syntax</p>
+            </div>
             <Editor
                 height="100%"
                 language="pseudocode"
